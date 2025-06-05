@@ -1,0 +1,739 @@
+.compteContainer{
+    background-color: white !important;
+    display: flex;
+    align-items:center;
+    justify-content:  flex-start;
+    flex-direction:column;
+    height:auto ;
+    min-height: 100vh;
+}
+
+
+.insiderCompte{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem !important;
+}
+
+.header{
+    border-radius: 0.3rem !important;
+    width: 300px !important;
+    margin-right: 20px;
+}
+
+.body{
+    width:calc(100% - 320px);
+    height: auto;
+    margin-top: .8rem;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 0.3rem !important;
+    margin-bottom: 3rem;
+
+}
+
+.header button{
+    width: 100%;
+    padding: 0.8rem 0rem;
+    height: auto;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 1rem !important;
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.containerI{
+    height: auto;
+    width: 24px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.containerI i{
+    font-size: 16px !important;
+}
+
+
+
+.header button:hover .containerI{
+    margin-right: 15px !important;
+}
+
+.headerOfBody{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 1rem 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.headerOfBody div{
+    margin: 0.2rem !important;
+}
+
+.usfwhud {
+    font-size: 15px;
+    font-weight: 600;
+    color: #303030;
+}
+
+.uershwfuod{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.bodyOfBodyX{
+    height: auto;
+    min-height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 1.6rem 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.containerINput66 input {
+    background-color: white;
+    border-radius: 0.3rem;
+    color: rgb(29, 29, 29) !important;
+    border: 1px solid rgb(220, 220, 220);
+    outline: none;
+    width: 100%;
+    padding: 0 1rem !important;
+    height: 45px;
+        margin-top: 0.5rem !important;
+
+}
+
+
+.noborderbottom{
+    border-bottom: none !important;
+}
+
+.containerINput66{
+    margin-top: 0.4rem ;
+}
+
+.containerINput66 {
+}
+
+.containerINput66 textarea{
+  background-color: white;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(220, 220, 220);
+    outline: none;
+    color: rgb(29, 29, 29) !important;
+    width: 100%;
+    padding: 1rem 1rem !important;
+    height: 90px;
+    margin-top: 0.5rem !important;
+    resize: none;   
+}
+
+.containerINput66 input:focus,  .containerINput66 textarea:focus {
+    border: 2px solid #1a75c0;
+}
+
+
+.containerINput66 .label{
+    color: rgb(110, 110, 110) !important;
+}
+
+.color-box {
+  width: 29px;
+  height: 29px;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s, outline 0.2s;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.color-box.selected {
+  border: 2px solid white;
+  outline-offset: 1px;
+}
+
+
+
+.selected-text {
+  font-weight: 400;
+  color: gray;
+}
+
+.containerINput66888{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.selected-Bleu{
+    outline: 3px solid #1975f5;
+}
+
+.selected-Jaune{
+    outline: 3px solid #eab308;
+}
+
+.selected-Vert{
+    outline: 3px solid #22c55e;
+}
+
+.selected-Bleuviolet{
+    outline: 3px solid #6366f1;
+}
+
+.selected-Rose{
+    outline: 3px solid #ec4799;
+}
+
+.selected-Bleu-Marin{
+    outline: 3px solid #64748b;
+}
+
+.selected-Emeraude{
+    outline: 3px solid #15B99B;
+}
+
+
+.selected-Noir{
+    outline: 3px solid #303030;
+}
+
+.buttonSave{
+    width: auto;
+    max-width: 240px;
+    height: 41px !important;
+    border-radius: 0.3rem;
+        font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem !important;
+    background-color: #1a75c0;
+    color: white !important;
+    transition: 0.1s all ease-in-out;
+}
+
+.buttonSave:hover{
+    background-color: #115b97;
+    color: white !important;
+
+}
+
+
+
+
+
+.buttonAnnuler{
+    width: auto;
+    max-width: 240px;
+    height: 41px !important;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem !important;
+    background-color: #e0e0e0;
+    color: #303030 !important;
+    font-weight: 500;
+    transition: 0.1s all ease-in-out;
+}
+
+.buttonAnnuler:hover{
+    background-color: #d6d6d6;
+    color: #303030 !important;
+
+}
+
+
+
+
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999999999999999999999999999999;
+  
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s ease, visibility  .4s ease;  }
+  
+  .loading-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+  .loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #1a75c0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+
+  
+.bodyOfBodyX2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-height: 40px !important;
+}
+
+
+
+
+.image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  margin-right: 0.5rem;
+  object-fit: cover;
+}
+
+
+.sfgwudosfwhdsfowd{
+    border: none !important;
+}
+
+.sfgwudosfwhdsfowd:focus{
+    border: none !important;
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delete-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: white;
+  border: none;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button i{
+    color: rgba(205, 0, 0, 0.8);
+    font-size: 17px;
+}
+
+
+.image-wrapper {
+    margin-right: 1rem !important;
+}
+
+.ijspwdfi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ijspwdfi div{
+    width: 48% !important;
+}
+
+.headerOfBodyModified{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+
+
+.btnAddNewbureau{
+    width: auto;
+    max-width: 240px;
+    height: 41px !important;
+    border-radius: 0.3rem;
+        font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 1rem !important;
+    background-color: #1a75c0;
+    color: white !important;
+    transition: 0.1s all ease-in-out;
+}
+
+.btnAddNewbureau:hover{
+    background-color: #115b97;
+    color: white !important;
+
+}
+
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.bureauTable {
+  width: calc(100% - 4rem);
+  border-collapse: collapse;
+  font-size: 14px;
+    margin: 2rem !important;
+}
+
+.bureauTable th, .bureauTable td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+text-align: left;
+}
+
+.bureauTable th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+}
+
+.btnAction {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 28px;
+    border-radius: 0.44rem !important;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.btnAction.edit i, .btnAction.delete {
+    font-size: 17px !important;
+    color: #303030;
+}
+
+.btnAction.edit:hover i {
+    color: #1a75c0;
+}
+
+.btnAction.delete:hover i{
+  color: #dc3545;
+}
+
+.tableContainer tr .ouvert{
+    color: rgb(29, 160, 29);
+    font-weight: 500;
+}
+
+.tableContainer tr .ferme{
+    font-weight: 500;
+    color: #dc3545;
+}
+
+.caseColor{
+    width: 14px;
+    height: 14px;
+    border-radius: 0.3rem;
+    background-color: #22c55e;
+}
+
+.flexiMa{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #22c55e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-overlayX {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999999999999999999999;
+}
+
+
+
+.modal-content {
+  background-color: white;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- 4.1) Header de la modal ----- */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+.modal-header h2 {
+  font-size: 19px;
+  color: #333;
+}
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  transition: color 0.2s;
+}
+.close-button:hover {
+  color: #333;
+}
+
+
+
+
+.modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== 4.2.1) Style générique des groupes de champs ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+.form-group input[type="text"],
+.form-group select {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+
+/* ===== 4.2.2) Palette de couleurs ===== */
+.color-picker {
+  display: flex;
+  gap: 8px;
+}
+.color-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.1s, border-color 0.1s;
+}
+.color-box:hover {
+  transform: scale(1.1);
+}
+.color-box.selected {
+}
+
+
+
+.multi-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ms-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ms-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.ms-option label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* ----- 4.3) Footer de la modal (boutons) ----- */
+.modal-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: #fafafa;
+}
+.btn-cancel,
+.btn-save, .btn-delete {
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius:0.333rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.btn-cancel {
+    background-color: #e0e0e0;
+    color: #303030 !important;
+}
+.btn-cancel:hover {
+  opacity: 0.85;
+}
+.btn-save {
+  background-color: #1a75c0;
+  color: white;
+}
+.btn-save:disabled {
+  background-color: #1a75c053;
+  cursor: not-allowed;
+}
+.btn-save:not(:disabled):hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+.btn-delete  {
+  background-color: #ac0000;
+  color: white;
+}
+
+
+.btn-delete :disabled {
+  background-color: #ac000044;
+  cursor: not-allowed;
+}
+.btn-delete :not(:disabled):hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+.form-group select , .form-group input{
+    border: 1px solid #d2d2d2 !important;
+    outline: none !important;
+   height: 43px;
+
+}
+
+
+.form-group select:focus , .form-group input:focus{
+    border: 2px solid #1a75c0 !important;
+}
+
+
+.modal-headerNoBorder{
+  border: none !important;
+}
+
+.btn-delete:hover  {
+  background-color: #930000;
+  color: white;
+}
+
+.modaleHeaderNoPADDIN{
+  padding-top: 4px ;
+  padding-bottom: 4px ;
+}

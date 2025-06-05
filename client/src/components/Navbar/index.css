@@ -1,0 +1,374 @@
+.Navbar{
+    width: 100%;
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 90px;
+    display: flex;
+    z-index: 99999999;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+    position: sticky !important;
+    top: 0 !important;
+    opacity: 0;   
+    animation: fadeIn 1.3s ease-in-out forwards;
+    padding: 0 3rem !important;
+}
+
+.NavbarShadow{
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 333px;
+}
+
+.logo img{
+    height: 40px;
+    width: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.logo span{
+    font-weight:700;
+    color: #1a75c0;
+    font-size: 1.2rem !important;
+    cursor: pointer;
+    letter-spacing: 0.666px;
+}
+
+
+.butContainer{
+    width: 280px;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.butContainer a:first-child button{
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+    padding: 0.4rem 0.666rem;
+    border-radius: 0.3rem;
+}
+
+.butContainer a:last-child button, .enterFullScreen{
+    background: #1a75c0;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    font-size: 14px !important;
+    font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+.NavContainer button{
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+    margin: 0 .3rem;
+    padding: 0.4rem 0.333rem;
+    border-radius: 0.3rem;
+}
+
+.butContainer a:last-child button:hover{
+    background-color: #083a63;
+}
+
+.NavContainer button:hover, .butContainer a:first-child button:hover{
+    background: #1fb9d83a;
+    color: #1a75c0; 
+}
+
+
+
+.NavContainer2 button{
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 0.15s all ease-in-out;
+    cursor: pointer;
+    margin: 0 .4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+}
+
+
+.NavContainer2 button:hover, .butContainer a:first-child button:hover{
+    background: #1fb9d83a;
+    color: #1a75c0; 
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .Navbar {
+      height: 69px !important;
+    }
+    .NavContainer, .butContainer{
+      display: none;
+    }
+    .butContainer,
+    .logo {
+      width: auto;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .logo span {
+      display: none;
+    }
+    .butContainer button:last-child {
+      padding: 0.5rem 0.8rem;
+    }
+    .logo img {
+      height: 28px;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+  
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    visibility: hidden;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+
+  }
+  
+  .sidebar.open {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    margin-bottom: 0.77rem;
+    padding: 0 1rem;
+    border-radius: 0.4rem !important;
+    justify-content: space-between;
+}
+  
+  .sidebar a {
+    height: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #202020;
+    width: 100%;
+    text-decoration: none;
+  }
+
+
+
+.ellipsis {
+    background: #1a75c0;
+    color: white;
+    outline: none;
+    border: none;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+.ellipsis2 {
+    background: #1a75c0;
+    color: white;
+    outline: none;
+    border: none;
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+
+
+
+.seConnecter, .register{
+    background-color: #1a75c0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #093a63;
+    color: white;
+}
+
+.register{
+    color: #202020;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 0.4rem !important;
+    background-color: rgb(241, 241, 241);
+}
+
+.rowBtn1{
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+ 
+.logoX{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+}
+
+
+.logo span span{
+  color: #1a75c0 !important; 
+  color: #1fb9d8 !important; 
+}
+
+
+/* 
+
+.NavbarTv{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: sticky;
+    top: 0;
+  z-index: 99999999999999;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 1rem !important;
+
+} */
+
+
+
+
+  
+
+.Navbartvtvt{
+    width: 100%;
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    z-index: 99999999;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease-in-out;
+    position: sticky !important;
+    top: 0 !important;
+    opacity: 0;   
+    animation: fadeIn 1.3s ease-in-out forwards;
+    padding: .8rem 1.5rem !important;
+    height: 80px !important;
+}
+
+
+.hideNavbar{
+  visibility: hidden !important; 
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+.fullScreen{
+
+    background: transparent !important;
+    color: #1a75c0;
+    border : 3px solid #1a75c0;
+    outline: none;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.15s all ease-in-out;
+}
+
+
+
+
+.logo span{
+  font-size: 1.4rem !important;
+} 
+
+.butContainer .enterFullScreen{
+  font-size: 14px !important;
+}
